@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Связи Тени — интерактивный детектив</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="landing" id="chapter1">
+  <h1>Глава 1. Подземная тишина</h1>
+  <p>Вагон метро покачивался… (полный текст главы 1 вставляется здесь).</p>
+  <div class="choice" data-target="chapter2">Подойти к мужчине</div>
+  <div class="choice" data-target="chapter3">Остаться и наблюдать</div>
+</section>
+
+<section class="landing hidden" id="chapter2">
+  <h1>Глава 2. След на коже</h1>
+  <p>(Короткий вариант текста — замените на полный).</p>
+  <div class="choice" data-target="chapter4">Продолжить</div>
+</section>
+
+<section class="landing hidden" id="chapter3">
+  <h1>Глава 2. В стороне от беды</h1>
+  <p>(Короткий вариант текста — замените на полный).</p>
+  <div class="choice" data-target="chapter4">Продолжить</div>
+</section>
+
+<!-- ... вставьте сюда главы 4–45 … -->
+
+<section class="landing hidden" id="chapter45">
+  <h1>Глава 45. Перелом</h1>
+  <p>(Кульминация выбора: пять концовок.)</p>
+  <div class="choice" data-target="ending1">Идти до полного уничтожения врагов</div>
+  <div class="choice" data-target="ending2">Оставить расследование ради спасения жизни</div>
+  <div class="choice" data-target="ending3">Заключить сделку ради высшей цели</div>
+  <div class="choice" data-target="ending4">Жертвовать собой ради будущего</div>
+  <div class="choice" data-target="ending5">Исчезнуть навсегда</div>
+</section>
+
+<!-- концовки -->
+<section class="landing hidden" id="ending1">
+  <h1>Истинная победа</h1>
+  <p>(True ending — замените на полный текст.)</p>
+  <div class="choice" data-target="theend">Завершить</div>
+</section>
+<section class="landing hidden" id="ending2">
+  <h1>Частичная победа</h1>
+  <p>(Partial ending — замените на полный текст.)</p>
+  <div class="choice" data-target="theend">Завершить</div>
+</section>
+<section class="landing hidden" id="ending3">
+  <h1>Ошибочный финал</h1>
+  <p>(Wrong accusation ending — замените.)</p>
+  <div class="choice" data-target="theend">Завершить</div>
+</section>
+<section class="landing hidden" id="ending4">
+  <h1>Трагический финал</h1>
+  <p>(Tragic ending — замените.)</p>
+  <div class="choice" data-target="theend">Завершить</div>
+</section>
+<section class="landing hidden" id="ending5">
+  <h1>Уход в тень</h1>
+  <p>(Vanishing ending — замените.)</p>
+  <div class="choice" data-target="theend">Завершить</div>
+</section>
+
+<section class="landing hidden" id="theend">
+  <h1>Спасибо за чтение!</h1>
+  <p>Попробуйте другие выборы, чтобы открыть все концовки.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
